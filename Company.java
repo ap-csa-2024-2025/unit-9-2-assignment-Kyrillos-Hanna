@@ -8,18 +8,21 @@ public class Company {
 	// Set missing values to null
 	public Company(String name)
 	{
-
+		this.name = name;
 	}
 
 
 	public Company(String name, String streetAddress, String city, String state)
 	{
-
+		this.name = name;
+		this.streetAddress = streetAddress;
+		this.city = city;
+		this.state = state;
 	}
 
 	public String getName()
 	{
-		return null;
+		return name;
 	}
 
 	/** Should return a String of the form
@@ -32,7 +35,7 @@ public class Company {
 	*/
 	public String address()
 	{
-		return null;
+		return streetAddress + "\n" + city + " " + state;
 	}
 
 	/** Should return a String of the form
@@ -47,6 +50,6 @@ public class Company {
 	*/
 	public String toString()
 	{
-		return null;
+		return name + "\n" + streetAddress + "\n" + city + " " + state;
 	}
 }
